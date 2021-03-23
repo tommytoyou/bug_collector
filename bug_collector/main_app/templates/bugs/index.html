@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Some Zany Bugs</title>
+  </head>
+  <body>
+    <h1>We've Got The Biggest Bugs of Them All!</h1>
+    <hr />
+    {% for bug in bugs %}
+    <p>Name: {{ bug.name }}</p>
+    {% if bug.age > 0 %}
+      <p>Age: {{ bug.age }}</p>
+    {% else %}
+      <p>Age: Grub</p>
+    {% endif %}
+    <hr />
+  {% endfor %}
+
+    <footer>All Rights Reserved, Boo Boo The Murder Hornet 2021</footer>
+  </body>
+</html>
